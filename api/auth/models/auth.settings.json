@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "auths",
+  "info": {
+    "name": "Auth",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "posts": {
+      "collection": "post",
+      "via": "auths",
+      "dominant": true
+    }
+  }
+}
